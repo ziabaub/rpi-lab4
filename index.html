@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>News Api</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+</head>
+<body>
+
+<div class="container">
+
+    <h3 class="center" style="margin-bottom:20px;">Occ search Engine <i class="material-icons medium hide-on-small-only" id="icons"></i></h3>
+
+    <form>
+        <div class="input-field">
+            <i class="material-icons prefix">public</i>
+            <input type="text" id="searchquery">
+            <label>Find what's happeing in the US......</label>
+        </div>
+
+        <div class="row">
+            <input type="submit" id="searchBtn" class="btn col m2 s12" value="search">
+            <input type="reset" id="resetBtn" class="btn col m2 s12 red right" value="clear"  style="margin-top:3px;">
+        </div>
+
+    </form>
+<!-- loader style can i visit ajaxloader or materialize -->
+    <div id="loader" style="display:none;">
+        <div class="progress">
+            <div class="indeterminate"></div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div id="newsResults"></div><br><br>
+        <input type="submit" id="getMore" class="btn col m2 s12" value="more" >
+    </div>
+
+
+
+
+
+</div>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="jquery-3.3.1.min.js"></script>
+<script src="newsapi.js"></script>
+
+<!--for designing-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="iconChanger.js"></script>
+
+
+
+<script type="text/javascript" src="bundle.js"></script></body>
+</html>
