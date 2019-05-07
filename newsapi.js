@@ -1,5 +1,6 @@
 
-import "./iconChanger.js";
+
+
 //listen to the document and start work when is ready
 let url = "https://newsapi.org/v2/top-headlines?q=it&country=us&category=business&apiKey=261f191c064f425baafde212648635d8";
 let count = 0;
